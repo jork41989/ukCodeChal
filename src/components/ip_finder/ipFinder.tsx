@@ -5,7 +5,8 @@ const publicIp = require('public-ip');
 export default function IpCheck(){
 
   const [userIp, setIp] = useState("")
-  const [location, setLocation] = useState({})
+  const [location, setLocation] = useState({city: "", region: ""})
+  const [city, setCity] = useState("")
 
 
   let getClientIp = async () =>{
@@ -21,18 +22,31 @@ export default function IpCheck(){
     if(userIp === ""){
       getClientIp().then(data => {
         setIp(data)
-        setLocation(getLocation(data))
-        console.log(location)
+        getLocation(data).then(
+          locData => {
+            setLocation(locData.data)
+          }
+        )
       } 
       )
-    } 
+    }
   }
+  let cityBuilder = () => {
+    if (location.city != "") {
+      setCity(`${location.city}, ${location.region}`)
+    }
+  }
+  useEffect(()=>{
+    ipLogger()
+    cityBuilder()
+  })
   
   return(
     <div>
       <p>Your IP Address is:</p>
       <p>{userIp}</p>
-      {ipLogger()}
+      <p>{city}</p>
+      {console.log(location)}
     </div>
   )
 }
