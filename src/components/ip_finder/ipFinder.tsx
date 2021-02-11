@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import './ipFinder.css'
 import { getLocation } from "../../util/ipLookup";
 const publicIp = require('public-ip');
 
@@ -42,10 +43,11 @@ export default function IpCheck(){
   })
   
   return(
-    <div>
+    <div className="ipComonentMain">
       <p>Your IP Address is:</p>
-      <p>{userIp}</p>
-      <p>{city}</p>
+      <p className="ipAddress">{userIp}</p>
+      <p>Your in:</p>
+      <p className="ipAddress">{city}</p>
       {console.log(location)}
     </div>
   )
