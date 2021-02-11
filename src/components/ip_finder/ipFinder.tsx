@@ -46,7 +46,7 @@ export default function IpCheck(){
     <div className="ipComonentMain">
       <p>Your IP Address is:</p>
       <p className="ipAddress">{userIp}</p>
-      <p>Your in:</p>
+      <p>You are in:</p>
       <p className="ipAddress">{city}</p>
       {console.log(location)}
     </div>
