@@ -48,7 +48,6 @@ export default function IpCheck(){
       <p className="ipAddress">{userIp}</p>
       <p>You are in:</p>
       <p className="ipAddress">{city}</p>
-      {console.log(location)}
     </div>
   )
 }
