@@ -21,12 +21,11 @@
     "web-components-with-react": "^1.2.1",
     "web-vitals": "^1.1.0"
   },
-  "scripts": {
+ "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postinstall": "vendor-copy"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
