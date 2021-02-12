@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import './ipFinder.css'
+import { ReactCustomElement } from 'web-components-with-react';
 import { getLocation } from "../../util/ipLookup";
 const publicIp = require('public-ip');
 
@@ -52,3 +52,4 @@ export default function IpCheck(){
     </div>
   )
 }
+customElements.define('ip-check', ReactCustomElement(IpCheck));
