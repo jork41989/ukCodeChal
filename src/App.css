@@ -1,6 +1,21 @@
 .App {
   text-align: center;
 }
+.ipAddress {
+  border-top: 1px solid rgba(0, 0, 0, 0.356);
+  border-right: 1px solid rgba(0, 0, 0, 0.356);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.787);
+  border-left: 2px solid rgba(0, 0, 0, 0.787);
+  border-radius: 5px;
+  padding: 5px;
+  width: 20%;
+}
+
+.ipComonentMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .App-logo {
   height: 40vmin;
