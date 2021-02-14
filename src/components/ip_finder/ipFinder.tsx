@@ -45,13 +45,15 @@ export default function IpCheck(){
     mainStyles: {
       display: 'flex', 
       flexDirection: "column",
-      alignItems: 'center'
+      alignItems: 'center',
+      marginTop: '40%',
+      borderTop: '1px solid rgba(0, 0, 0, 0.356)',
+      borderRight: '1px solid rgba(0, 0, 0, 0.356)',
+      borderBottom: '2px solid rgba(0, 0, 0, 0.787)',
+      borderLeft: '2px solid rgba(0, 0, 0, 0.787)',
+      width: '50%',
+
     },
-    ipComonentMain: {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center'
-},
   ipAddress: {
   borderTop: '1px solid rgba(0, 0, 0, 0.356)',
   borderRight: '1px solid rgba(0, 0, 0, 0.356)',
@@ -59,7 +61,8 @@ export default function IpCheck(){
   borderLeft: '2px solid rgba(0, 0, 0, 0.787)',
   borderRadius: '5px',
   padding: '5px',
-  width: '20%',
+  width: '40%',
+  textAlign: 'center',
 }
 
 
@@ -67,9 +70,9 @@ export default function IpCheck(){
   return(
     <div className="ipComonentMain" style={styles.mainStyles as React.CSSProperties}>
       <p>Your IP Address is:</p>
-      <p className="ipAddress" style={styles.ipAddress}>{userIp}</p>
+      <p className="ipAddress" style={styles.ipAddress as React.CSSProperties}>{userIp}</p>
       <p>You are in:</p>
-      <p className="ipAddress" style={styles.ipAddress}>{city}</p>
+      <p className="ipAddress" style={styles.ipAddress as React.CSSProperties}>{city}</p>
     </div>
   )
 }
