@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import './ipFinder.css'
 import IpCheck from './components/ip_finder/ipFinder.tsx';
 
 function App() {
