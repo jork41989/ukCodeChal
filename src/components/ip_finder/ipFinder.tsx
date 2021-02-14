@@ -52,7 +52,7 @@ export default function IpCheck(){
       borderBottom: '2px solid rgba(0, 0, 0, 0.787)',
       borderLeft: '2px solid rgba(0, 0, 0, 0.787)',
       width: '50%',
-
+      borderRadius: "5px"
     },
   ipAddress: {
   borderTop: '1px solid rgba(0, 0, 0, 0.356)',
