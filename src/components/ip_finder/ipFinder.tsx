@@ -78,6 +78,7 @@ export default function IpCheck() {
       borderLeft: "2px solid rgba(0, 0, 0, 0.787)",
       width: "50%",
       borderRadius: "5px",
+      backgroundColor: "#6096BA",
     },
     ipAddress: {
       borderTop: "1px solid rgba(0, 0, 0, 0.356)",
@@ -87,6 +88,8 @@ export default function IpCheck() {
       borderRadius: "5px",
       padding: "5px",
       textAlign: "center",
+      backgroundColor: "#A3CEF1",
+      color: "#274C77",
     },
   };
   return (
