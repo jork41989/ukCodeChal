@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ReactCustomElement } from "web-components-with-react";
 import { getLocation } from "../../util/ipLookup";
 import { ReactComponent as Spinner } from "./Disk-1.4s-200px.svg";
+import Credits from '../credits/credits'
 const publicIp = require("public-ip");
 
 export default function IpCheck() {
@@ -105,6 +106,7 @@ export default function IpCheck() {
       <p className="ipAddress" style={styles.ipAddress as React.CSSProperties}>
         {city}
       </p>
+      <Credits/>
       <div id="status">{loadingStatus()}</div>
     </div>
   );
